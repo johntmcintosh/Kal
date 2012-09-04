@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B40FE0115F6AFAC0033E8E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B40FE0015F6AFAC0033E8E5 /* UIKit.framework */; };
+		5B40FE0315F6AFAC0033E8E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B40FE0215F6AFAC0033E8E5 /* Foundation.framework */; };
+		5B40FE0515F6AFAC0033E8E5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B40FE0415F6AFAC0033E8E5 /* CoreGraphics.framework */; };
+		5B40FE0B15F6AFAC0033E8E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B40FE0915F6AFAC0033E8E5 /* InfoPlist.strings */; };
+		5B40FE0D15F6AFAC0033E8E5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE0C15F6AFAC0033E8E5 /* main.m */; };
+		5B40FE1115F6AFAC0033E8E5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE1015F6AFAC0033E8E5 /* AppDelegate.m */; };
+		5B40FE1415F6AFAC0033E8E5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE1315F6AFAC0033E8E5 /* ViewController.m */; };
+		5B40FE1715F6AFAC0033E8E5 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B40FE1515F6AFAC0033E8E5 /* ViewController.xib */; };
+		5B40FE2815F6AFD90033E8E5 /* libKal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B40FE2515F6AFB80033E8E5 /* libKal.a */; };
+		5B40FE2A15F6AFF70033E8E5 /* Kal.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5B40FE2915F6AFF70033E8E5 /* Kal.bundle */; };
+		5B40FE2D15F6B2CA0033E8E5 /* JTKalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE2C15F6B2CA0033E8E5 /* JTKalViewController.m */; };
+		5B40FE3015F6B94D0033E8E5 /* JTDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE2F15F6B94D0033E8E5 /* JTDateVC.m */; };
+		5B40FE3A15F6C0620033E8E5 /* KalView+JTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE3915F6C0620033E8E5 /* KalView+JTExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5B40FE2415F6AFB80033E8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B40FE1D15F6AFB80033E8E5 /* Kal.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = Kal;
+		};
+		5B40FE2615F6AFD40033E8E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B40FE1D15F6AFB80033E8E5 /* Kal.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = Kal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5B40FDFC15F6AFAC0033E8E5 /* KalTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KalTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B40FE0015F6AFAC0033E8E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5B40FE0215F6AFAC0033E8E5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5B40FE0415F6AFAC0033E8E5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5B40FE0815F6AFAC0033E8E5 /* KalTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KalTest-Info.plist"; sourceTree = "<group>"; };
+		5B40FE0A15F6AFAC0033E8E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5B40FE0C15F6AFAC0033E8E5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5B40FE0E15F6AFAC0033E8E5 /* KalTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KalTest-Prefix.pch"; sourceTree = "<group>"; };
+		5B40FE0F15F6AFAC0033E8E5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5B40FE1015F6AFAC0033E8E5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5B40FE1215F6AFAC0033E8E5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5B40FE1315F6AFAC0033E8E5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5B40FE1615F6AFAC0033E8E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		5B40FE1D15F6AFB80033E8E5 /* Kal.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kal.xcodeproj; path = ../../src/Kal.xcodeproj; sourceTree = "<group>"; };
+		5B40FE2915F6AFF70033E8E5 /* Kal.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Kal.bundle; path = ../../../src/Kal.bundle; sourceTree = "<group>"; };
+		5B40FE2B15F6B2CA0033E8E5 /* JTKalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTKalViewController.h; sourceTree = "<group>"; };
+		5B40FE2C15F6B2CA0033E8E5 /* JTKalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTKalViewController.m; sourceTree = "<group>"; };
+		5B40FE2E15F6B94D0033E8E5 /* JTDateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTDateVC.h; sourceTree = "<group>"; };
+		5B40FE2F15F6B94D0033E8E5 /* JTDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateVC.m; sourceTree = "<group>"; };
+		5B40FE3815F6C0620033E8E5 /* KalView+JTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KalView+JTExtension.h"; sourceTree = "<group>"; };
+		5B40FE3915F6C0620033E8E5 /* KalView+JTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KalView+JTExtension.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B40FDF915F6AFAC0033E8E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B40FE2815F6AFD90033E8E5 /* libKal.a in Frameworks */,
+				5B40FE0115F6AFAC0033E8E5 /* UIKit.framework in Frameworks */,
+				5B40FE0315F6AFAC0033E8E5 /* Foundation.framework in Frameworks */,
+				5B40FE0515F6AFAC0033E8E5 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B40FDF115F6AFAC0033E8E5 = {
+			isa = PBXGroup;
+			children = (
+				5B40FE1D15F6AFB80033E8E5 /* Kal.xcodeproj */,
+				5B40FE0615F6AFAC0033E8E5 /* KalTest */,
+				5B40FDFF15F6AFAC0033E8E5 /* Frameworks */,
+				5B40FDFD15F6AFAC0033E8E5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5B40FDFD15F6AFAC0033E8E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B40FDFC15F6AFAC0033E8E5 /* KalTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B40FDFF15F6AFAC0033E8E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B40FE0015F6AFAC0033E8E5 /* UIKit.framework */,
+				5B40FE0215F6AFAC0033E8E5 /* Foundation.framework */,
+				5B40FE0415F6AFAC0033E8E5 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5B40FE0615F6AFAC0033E8E5 /* KalTest */ = {
+			isa = PBXGroup;
+			children = (
+				5B40FE3815F6C0620033E8E5 /* KalView+JTExtension.h */,
+				5B40FE3915F6C0620033E8E5 /* KalView+JTExtension.m */,
+				5B40FE2B15F6B2CA0033E8E5 /* JTKalViewController.h */,
+				5B40FE2C15F6B2CA0033E8E5 /* JTKalViewController.m */,
+				5B40FE2E15F6B94D0033E8E5 /* JTDateVC.h */,
+				5B40FE2F15F6B94D0033E8E5 /* JTDateVC.m */,
+				5B40FE0F15F6AFAC0033E8E5 /* AppDelegate.h */,
+				5B40FE1015F6AFAC0033E8E5 /* AppDelegate.m */,
+				5B40FE1215F6AFAC0033E8E5 /* ViewController.h */,
+				5B40FE1315F6AFAC0033E8E5 /* ViewController.m */,
+				5B40FE1515F6AFAC0033E8E5 /* ViewController.xib */,
+				5B40FE0715F6AFAC0033E8E5 /* Supporting Files */,
+			);
+			path = KalTest;
+			sourceTree = "<group>";
+		};
+		5B40FE0715F6AFAC0033E8E5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5B40FE2915F6AFF70033E8E5 /* Kal.bundle */,
+				5B40FE0815F6AFAC0033E8E5 /* KalTest-Info.plist */,
+				5B40FE0915F6AFAC0033E8E5 /* InfoPlist.strings */,
+				5B40FE0C15F6AFAC0033E8E5 /* main.m */,
+				5B40FE0E15F6AFAC0033E8E5 /* KalTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5B40FE1E15F6AFB80033E8E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B40FE2515F6AFB80033E8E5 /* libKal.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B40FDFB15F6AFAC0033E8E5 /* KalTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B40FE1A15F6AFAC0033E8E5 /* Build configuration list for PBXNativeTarget "KalTest" */;
+			buildPhases = (
+				5B40FDF815F6AFAC0033E8E5 /* Sources */,
+				5B40FDF915F6AFAC0033E8E5 /* Frameworks */,
+				5B40FDFA15F6AFAC0033E8E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B40FE2715F6AFD40033E8E5 /* PBXTargetDependency */,
+			);
+			name = KalTest;
+			productName = KalTest;
+			productReference = 5B40FDFC15F6AFAC0033E8E5 /* KalTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B40FDF315F6AFAC0033E8E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "John McIntosh";
+			};
+			buildConfigurationList = 5B40FDF615F6AFAC0033E8E5 /* Build configuration list for PBXProject "KalTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5B40FDF115F6AFAC0033E8E5;
+			productRefGroup = 5B40FDFD15F6AFAC0033E8E5 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 5B40FE1E15F6AFB80033E8E5 /* Products */;
+					ProjectRef = 5B40FE1D15F6AFB80033E8E5 /* Kal.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				5B40FDFB15F6AFAC0033E8E5 /* KalTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		5B40FE2515F6AFB80033E8E5 /* libKal.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libKal.a;
+			remoteRef = 5B40FE2415F6AFB80033E8E5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B40FDFA15F6AFAC0033E8E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B40FE2A15F6AFF70033E8E5 /* Kal.bundle in Resources */,
+				5B40FE0B15F6AFAC0033E8E5 /* InfoPlist.strings in Resources */,
+				5B40FE1715F6AFAC0033E8E5 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B40FDF815F6AFAC0033E8E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B40FE0D15F6AFAC0033E8E5 /* main.m in Sources */,
+				5B40FE1115F6AFAC0033E8E5 /* AppDelegate.m in Sources */,
+				5B40FE1415F6AFAC0033E8E5 /* ViewController.m in Sources */,
+				5B40FE2D15F6B2CA0033E8E5 /* JTKalViewController.m in Sources */,
+				5B40FE3015F6B94D0033E8E5 /* JTDateVC.m in Sources */,
+				5B40FE3A15F6C0620033E8E5 /* KalView+JTExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B40FE2715F6AFD40033E8E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Kal;
+			targetProxy = 5B40FE2615F6AFD40033E8E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B40FE0915F6AFAC0033E8E5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B40FE0A15F6AFAC0033E8E5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5B40FE1515F6AFAC0033E8E5 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B40FE1615F6AFAC0033E8E5 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B40FE1815F6AFAC0033E8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		5B40FE1915F6AFAC0033E8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B40FE1B15F6AFAC0033E8E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KalTest/KalTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../src;
+				INFOPLIST_FILE = "KalTest/KalTest-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5B40FE1C15F6AFAC0033E8E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "KalTest/KalTest-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../src;
+				INFOPLIST_FILE = "KalTest/KalTest-Info.plist";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B40FDF615F6AFAC0033E8E5 /* Build configuration list for PBXProject "KalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B40FE1815F6AFAC0033E8E5 /* Debug */,
+				5B40FE1915F6AFAC0033E8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B40FE1A15F6AFAC0033E8E5 /* Build configuration list for PBXNativeTarget "KalTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B40FE1B15F6AFAC0033E8E5 /* Debug */,
+				5B40FE1C15F6AFAC0033E8E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5B40FDF315F6AFAC0033E8E5 /* Project object */;
+}
