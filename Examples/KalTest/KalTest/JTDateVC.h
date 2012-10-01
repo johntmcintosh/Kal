@@ -9,6 +9,6 @@
 #import "JTKalViewController.h"
 #import "Kal.h"
 
-@interface JTDateVC : JTKalViewController <KalDataSource>
+@interface JTDateVC : JTKalViewController <KalDataSource, JTKalViewControllerDelegate>
 
 @end

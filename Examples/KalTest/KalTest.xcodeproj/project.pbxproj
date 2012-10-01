@@ -20,6 +20,7 @@
 		5B40FE2D15F6B2CA0033E8E5 /* JTKalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE2C15F6B2CA0033E8E5 /* JTKalViewController.m */; };
 		5B40FE3015F6B94D0033E8E5 /* JTDateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE2F15F6B94D0033E8E5 /* JTDateVC.m */; };
 		5B40FE3A15F6C0620033E8E5 /* KalView+JTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B40FE3915F6C0620033E8E5 /* KalView+JTExtension.m */; };
+		5B951EC3161A48A7006097AF /* KalGridView+JTExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B951EC2161A48A6006097AF /* KalGridView+JTExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		5B40FE2F15F6B94D0033E8E5 /* JTDateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTDateVC.m; sourceTree = "<group>"; };
 		5B40FE3815F6C0620033E8E5 /* KalView+JTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KalView+JTExtension.h"; sourceTree = "<group>"; };
 		5B40FE3915F6C0620033E8E5 /* KalView+JTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KalView+JTExtension.m"; sourceTree = "<group>"; };
+		5B951EC1161A48A6006097AF /* KalGridView+JTExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KalGridView+JTExtension.h"; sourceTree = "<group>"; };
+		5B951EC2161A48A6006097AF /* KalGridView+JTExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KalGridView+JTExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 		5B40FE0615F6AFAC0033E8E5 /* KalTest */ = {
 			isa = PBXGroup;
 			children = (
+				5B951EC1161A48A6006097AF /* KalGridView+JTExtension.h */,
+				5B951EC2161A48A6006097AF /* KalGridView+JTExtension.m */,
 				5B40FE3815F6C0620033E8E5 /* KalView+JTExtension.h */,
 				5B40FE3915F6C0620033E8E5 /* KalView+JTExtension.m */,
 				5B40FE2B15F6B2CA0033E8E5 /* JTKalViewController.h */,
@@ -232,6 +237,7 @@
 				5B40FE2D15F6B2CA0033E8E5 /* JTKalViewController.m in Sources */,
 				5B40FE3015F6B94D0033E8E5 /* JTDateVC.m in Sources */,
 				5B40FE3A15F6C0620033E8E5 /* KalView+JTExtension.m in Sources */,
+				5B951EC3161A48A7006097AF /* KalGridView+JTExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +367,7 @@
 				5B40FE1C15F6AFAC0033E8E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

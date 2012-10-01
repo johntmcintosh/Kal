@@ -26,6 +26,7 @@
 - (void)loadView
 {
     self.dataSource = self;
+    self.jtKVCDelegate = self;
     [super loadView];
 }
 
@@ -69,5 +70,11 @@
     
 }
 
+#pragma mark - JTKalViewControllerDelegate
+
+- (void)kalViewController:(JTKalViewController *)kalVC userDidTapFromDate:(NSDate *)fromDate toDate:(NSDate *)toDate
+{
+    NSLog(@"USER DID TAP");
+}
 
 @end

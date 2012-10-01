@@ -15,7 +15,10 @@
 #import "KalView.h"       // for the KalViewDelegate protocol
 #import "KalDataSource.h" // for the KalDataSourceCallbacks protocol
 
+#import "KalGridView+JTExtension.h"
+
 @class KalLogic, KalDate;
+@protocol JTKalViewControllerDelegate;
 
 /*
  *    KalViewController
@@ -28,7 +31,7 @@
  *  date is selected (just like in Apple's calendar app).
  *
  */
-@interface JTKalViewController : UIViewController <KalViewDelegate, KalDataSourceCallbacks>
+@interface JTKalViewController : UIViewController <KalViewDelegate, JTKalViewDelegate, KalDataSourceCallbacks>
 {
     KalLogic *logic;
     id <UITableViewDelegate> delegate;
@@ -40,9 +43,15 @@
 @property (nonatomic, assign) id<UITableViewDelegate> delegate;
 @property (nonatomic, assign) id<KalDataSource> dataSource;
 @property (nonatomic, retain, readonly) NSDate *selectedDate;
+@property (nonatomic, weak) id<JTKalViewControllerDelegate> jtKVCDelegate;
 
 - (id)initWithSelectedDate:(NSDate *)selectedDate;  // designated initializer. When the calendar is first displayed to the user, the month that contains 'selectedDate' will be shown and the corresponding tile for 'selectedDate' will be automatically selected.
 - (void)reloadData;                                 // If you change the KalDataSource after the KalViewController has already been displayed to the user, you must call this method in order for the view to reflect the new data.
 - (void)showAndSelectDate:(NSDate *)date;           // Updates the state of the calendar to display the specified date's month and selects the tile for that date.
 
+@end
+
+
+@protocol JTKalViewControllerDelegate <NSObject>
+- (void)kalViewController:(JTKalViewController *)kalVC userDidTapFromDate:(NSDate *)fromDate toDate:(NSDate *)toDate;
 @end

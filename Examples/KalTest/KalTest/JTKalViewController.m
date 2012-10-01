@@ -102,6 +102,14 @@ void mach_absolute_difference(uint64_t end, uint64_t start, struct timespec *tp)
 // -----------------------------------------
 #pragma mark KalViewDelegate protocol
 
+- (void)userDidTapDate:(KalDate *)date
+{
+    self.selectedDate = [date NSDate];
+    NSDate *from = [[date NSDate] cc_dateByMovingToBeginningOfDay];
+    NSDate *to = [[date NSDate] cc_dateByMovingToEndOfDay];
+    [self.jtKVCDelegate kalViewController:self userDidTapFromDate:from toDate:to];
+}
+
 - (void)didSelectDate:(KalDate *)date
 {
     self.selectedDate = [date NSDate];
@@ -193,6 +201,7 @@ void mach_absolute_difference(uint64_t end, uint64_t start, struct timespec *tp)
     KalView *kalView = [[KalView alloc] initWithFrame:CGRectMake(0, 0, defaultSize.width, defaultSize.height)
                                              delegate:self
                                                 logic:logic];
+    kalView.gridView.jtKalViewDelegate = self;
     self.view = kalView;
     kalView.tableView.hidden = YES;
     [kalView selectDate:[KalDate dateFromNSDate:self.initialDate]];
