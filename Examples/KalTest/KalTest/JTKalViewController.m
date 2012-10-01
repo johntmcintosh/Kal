@@ -198,7 +198,7 @@ void mach_absolute_difference(uint64_t end, uint64_t start, struct timespec *tp)
     [kalView selectDate:[KalDate dateFromNSDate:self.initialDate]];
     [self reloadData];
     
-    self.contentSizeForViewInPopover = defaultSize;
+    self.contentSizeForViewInPopover = CGSizeMake(kalView.gridView.frame.size.width, kalView.gridView.frame.size.height+44); // kalView.grid.frame.size; //defaultSize;
 
     [kalView.gridView addObserver:self forKeyPath:@"frame" options:NSKeyValueObservingOptionNew context:nil];
 }
